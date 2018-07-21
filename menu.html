@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Queen Hotel</title>
+</head>
+
+
+		<script type="text/javascript">
+		//Function to find admin or customer
+		function findUser()
+		{
+				var id=document.getElementById("userName").value;
+				var id1="admin";
+
+				if(id===id1))
+				{	
+					window.open("D:/project/admin.html");
+				}
+				else
+				{
+					window.open("D:/project/processLogin.html");
+				}
+				
+		}
+		</script>
+
+<body style="background-color:#DDD5C5">
+
+<center>
+	<header style="font-family:Monotype Corsiva">
+		<I>QUEEN HOTEL</I>
+	</header>
+</center><br><br>
+	
+	
+	
+	<br/>
+	<center>
+	
+	<fieldset>
+	<legend>Login</legend>
+	<table>
+		<form name="user" onsubmit="findUser()">
+			<tr>
+				<td>User name</td>
+				<td><input id="userName" name="userName" class="textbox" type="text" value=""/></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input id="password" name="password" class="textbox" type="password" value=""/></td>
+			</tr>
+			<tr>
+				<td>Role</td>
+				<td><select id="role" name="role" class="textbox"><option value="admin">admin</option></select></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input  type="submit" value="Login" ></td>
+			</tr>
+		</form>
+		
+	</table>
+	</fieldset></center>
+	
+
+<br/>
+
+<div style="height:450px;">
+	<h5><center>Facilities available at the Hotels</center></h5>
+			<marquee behavior="scroll" direction="right" >
+			
+				<p><pre>Swimming pool       Gym        ATM         Playing courts       Casino      Restaurants</pre>
+				
+				</p>
+
+				
+			</marquee>
+			<br/>
+			<span id="offer" class="blinking"><center>*Exciting Offer*</center></span>
+		
+<pre align="center">Copyrights @Reserved</pre>
+</div>
+</body>
+</html>
